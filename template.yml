@@ -1,0 +1,19 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: Test Deployment of an Instance
+
+Parameters:
+  Name:
+    Type: String
+    Description: Your Name
+    
+Resources:
+  EC2InstanceTest:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.nano
+      ImageId: ami-0e952010fc45db537
+      Tags:
+        - Key: Name
+          Value: !Sub ${Name}'s Instance
