@@ -17,3 +17,5 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub ${Name}'s Instance
+        - Key: Hello
+          Value: !Sub ${Name}'s Hello World
