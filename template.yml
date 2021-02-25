@@ -12,10 +12,10 @@ Resources:
   EC2InstanceTest:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: t2.nano
+      InstanceType: t3.nano
       ImageId: ami-0e952010fc45db537
       Tags:
         - Key: Name
           Value: !Sub ${Name}'s Instance
         - Key: Hello
-          Value: !Sub ${Name}'s Hello World
+          Value: !Sub ${Name}'s
